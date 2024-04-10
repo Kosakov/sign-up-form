@@ -4,15 +4,18 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
-    background-color: black;
-    color: white;
+    background-color: #FFFFFF;
+    color: black;
     font-family: "NotoSansDisplay",sans-serif;
     
 }
 
-.wrapper{
-    display: flex;
+body{
+    background-color: black;
 }
+.wrapper{
+    margin-left: 15%;
+    display: flex;}
 img{
     max-width: 6em;
     height: auto;
@@ -52,25 +55,91 @@ font-size: 6em;
 }
 
 .content-section{
-    flex:1 1 60vw;
+    background-color: white;
+    flex:1 0 60vw;
     display:flex;
     flex-wrap: wrap;
-    
+    align-content: flex-start;
 }
 
 
 .header-text{
     background-color: #F9FAFB;
-    height: 23.6em;
-    flex:1 1 100%
+    min-height: 17.6em;
+    flex:1 1 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
+
+
 
 .header-text *{
     background-color:inherit;
     color: black;
+    font-size: 1.1em;
+    text-align: center;
+    width: 65ch;
+    font-weight: 700;
+}
+
+.header-text > p > em{
     font-size: 1em;
 }
 
-.header-text:first-child{
-    width: 35ch;
+.header-text>p:nth-child(1){
+    padding-top: 6em;
+    flex: 1 1 100%;}
+
+.header-text>p:nth-child(2){
+    margin-top: 1em;
+    flex-shrink: 1;
+}
+
+.form-group:after{
+    content: "";
+    display:table;
+    clear:both;
+  } 
+  .form-group-half{
+    padding:0 0.3em 1em 0.3em;
+    float:left;
+    width:20em;
+  }
+  .form-group-half > label{
+    font-size: 0.6em;
+    display:block;
+    text-transform: uppercase;
+    font-weight: 800;
+    opacity: 0.6;
+  }
+  .form-group-half > input {
+    width:100%;
+    border-radius: 4px;
+    border-color: #E5E7EB;
+  }
+
+  .formInfo>p{
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding:0 1em;
+    
+  }
+
+  #accBtn{
+    background-color: #596D48;
+    color: #FFFFFF;
+    font-weight: 800;
+    border-radius: 7px;
+    padding: 0.7em;
+    margin-bottom: 4em;
+  }
+
+.buttonDiv{
+    min-height: 14.9em;
+}
+
+#loginLink{
+    color: #596D48;
 }
