@@ -1,9 +1,13 @@
+@import "fonts.css";
+
 *{
     margin: 0;
     padding: 0;
     font-size: 20px;
     background-color: black;
     color: white;
+    font-family: "NotoSansDisplay",sans-serif;
+    
 }
 
 .wrapper{
@@ -43,21 +47,30 @@ img{
 }
 
 .pic>p{
+font-family: "Norse-Bold";
 font-size: 6em;
+}
+
+.content-section{
+    flex:1 1 60vw;
+    display:flex;
+    flex-wrap: wrap;
+    
 }
 
 
 .header-text{
     background-color: #F9FAFB;
+    height: 23.6em;
+    flex:1 1 100%
 }
 
 .header-text *{
     background-color:inherit;
     color: black;
     font-size: 1em;
-    text-transform: uppercase;
 }
 
 .header-text:first-child{
-    width: 65ch;
+    width: 35ch;
 }
