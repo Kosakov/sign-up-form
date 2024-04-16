@@ -16,7 +16,7 @@ body{
 .wrapper{
     
     display: flex;
-    gap: em;
+    gap: 1em;
 
 }
 img{
@@ -117,7 +117,7 @@ font-size: 6em;
     display:block;
     text-transform: uppercase;
     font-weight: 800;
-    opacity: 0.6;
+    
   }
   .form-group-half > input {
     width:100%;
@@ -156,4 +156,31 @@ font-size: 6em;
 
 #loginLink{
     color: #596D48;
+    outline: none;
 }
+.form-group-half>input:user-invalid{
+    border:2px solid red
+
+}
+
+input:focus{
+    border:2px solid blue
+}
+
+.form-group-half>input:user-valid{
+    border:2px solid green
+}
+
+
+.error-msg{
+    color: red;
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+

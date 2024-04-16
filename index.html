@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
     <title>Sign-Up Form</title>
 </head>
 
@@ -39,11 +39,12 @@
                         </div>
                         <div class="form-group-half">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email"  pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$"
+                            required>
                         </div>
                         <div class="form-group-half">
-                            <label for="phone_num">Phone Number</label>
-                            <input type="tel" name="phone_num" id="phone_num" required>
+                            <label for="phone_num">Phone Number (starting with 0)</label>
+                            <input type="text" name="phone_num" id="phone_num" pattern="^0\d{1,15}$" required>
                         </div>
                         <div class="form-group-half">
                             <label for="pass">Password</label>
