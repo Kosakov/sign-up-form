@@ -12,21 +12,17 @@ form.addEventListener('submit', function(event) {
     if(password!==confirmPassword){
         console.log("KUR")
         if (document.querySelector(".error-msg")){
-            console.log("kur2")
         return
         }
         let err=document.createElement("p")
         err.textContent="* Passwords does not match"
         err.classList.add("error-msg")
         passwordContainer.appendChild(err)
+        passwordField.style.borderColor="red"
+        confirmPasswordField.style.borderColor="red"
         
     }
     else{
         form.submit()
-    }
-
-    console.log('Password:', password);
-    console.log('Confirm Password:', confirmPassword);
-
-    
+    }  
 });
