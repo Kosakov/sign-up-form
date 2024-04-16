@@ -14,8 +14,11 @@ body{
     background-color: black;
 }
 .wrapper{
-    margin-left: 15%;
-    display: flex;}
+    
+    display: flex;
+    gap: em;
+
+}
 img{
     max-width: 6em;
     height: auto;
@@ -56,7 +59,7 @@ font-size: 6em;
 
 .content-section{
     background-color: white;
-    flex:1 0 60vw;
+    flex:1 0 0vw;
     display:flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -78,9 +81,9 @@ font-size: 6em;
     background-color:inherit;
     color: black;
     font-size: 1.1em;
-    text-align: center;
+    text-align: left;
     width: 65ch;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .header-text > p > em{
@@ -88,12 +91,15 @@ font-size: 6em;
 }
 
 .header-text>p:nth-child(1){
+    max-height: 5.6em;
     padding-top: 6em;
-    flex: 1 1 100%;}
+    flex: 1 1 100%;
+    padding-left: 1em;
+}
 
 .header-text>p:nth-child(2){
-    margin-top: 1em;
     flex-shrink: 1;
+    padding-left: 1em;
 }
 
 .form-group:after{
@@ -128,16 +134,24 @@ font-size: 6em;
   }
 
   #accBtn{
+    font-size: 0.9em;
     background-color: #596D48;
     color: #FFFFFF;
     font-weight: 800;
-    border-radius: 7px;
-    padding: 0.7em;
-    margin-bottom: 4em;
+    border-radius: 8px;
+    padding: 0.7em 2.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+
   }
 
 .buttonDiv{
     min-height: 14.9em;
+    margin-left: 0.4em;
+}
+.buttonDiv>p{
+    margin-left: 1.9em;
 }
 
 #loginLink{
